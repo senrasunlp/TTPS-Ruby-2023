@@ -1,0 +1,5 @@
+Ruby Symbols
+In Ruby, symbols are immutable names primarily used as hash keys or for referencing method names.
+
+Ruby Hashes, Symbols, & Values
+In Ruby hashes, key symbols and their values can be defined in either of two ways, using a => or : to separate symbol keys from values.

@@ -1,0 +1,1 @@
+Con nombre_variable.to_s se convierte a string

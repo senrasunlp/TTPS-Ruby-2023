@@ -1,0 +1,1 @@
+Para convertir un objeto String a un symbol en ruby se utiliza el metodo to_sym

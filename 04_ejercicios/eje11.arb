@@ -1,0 +1,33 @@
+=begin
+Tomando el ejercicio anterior como referencia, 
+¿en qué situaciones usarías los métodos send y public_send definidos en la clase Object? 
+¿Cuál es la principal diferencia entre esos dos métodos?
+=end
+
+
+# Example using send and public_send
+class C
+    def m3
+        puts "m3"
+    end
+
+    private
+    def m4
+        puts "m4"
+    end
+end
+
+C.new.send(:m3)
+C.new.public_send(:m3)
+C.new.send(:m4)
+
+# C.new.public_send(:m4) # => NoMethodError: private method `m4' called for #<C:0x0000000001f6b0d0>
+# => send and public_send are methods of the Object class
+# => send and public_send invoke the method identified by the symbol
+# => send and public_send return the result of the method invocation
+# => The main difference between send and public_send is that public_send does not invoke private methods
+# => I would use send and public_send when I need to invoke a method identified by a symbol
+# => I would use send when I need to invoke a private method
+# => I would use public_send when I need to invoke a public method
+# => I would use send when I need to invoke a method identified by a symbol and I don't know if it is private or public
+
